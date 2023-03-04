@@ -10,14 +10,14 @@ public class GeoTree {
 
     // связь родитель - ребенок
     public void appendPerentChild(Person parent, Person children) {
-        tree.add(new Node(parent, Relationship.parent, children));
-        tree.add(new Node(children, Relationship.child, parent));
+        tree.add(new Node(parent, Relationship.PARENT, children));
+        tree.add(new Node(children, Relationship.CHILD, parent));
     }
 
     // связь муж - жена
-    public void appendVifeHusbent(Person vife, Person husbent) {
-        tree.add(new Node(vife, Relationship.wife, husbent));
-        tree.add(new Node(husbent, Relationship.husband, vife));
+    public void appendVifeHusbent(Person WIFE, Person husband) {
+        tree.add(new Node(WIFE, Relationship.WIFE, husband));
+        tree.add(new Node(husband, Relationship.HUSBAND, WIFE));
     }
 
 }

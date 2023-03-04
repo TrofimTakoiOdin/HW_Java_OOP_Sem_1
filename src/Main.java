@@ -26,14 +26,14 @@ public class Main {
 
         // Ищем детей Ирины
         System.out.println("Дети Ирины");
-        System.out.println(new Research(gt).spend(irina, Relationship.parent));
+        System.out.println(new Research(gt).spend(irina, Relationship.PARENT));
         // Ищем детей Игоря
         System.out.println("Дети Игоря");
-        System.out.println(new Research(gt).spend(igor, Relationship.parent));
+        System.out.println(new Research(gt).spend(igor, Relationship.PARENT));
 
         // Ищем мужа Ирины (Чья жена Ирина?)
         System.out.println("Муж Ирины");
-        System.out.println(new Research(gt).spend(irina, Relationship.wife));
+        System.out.println(new Research(gt).spend(irina, Relationship.WIFE));
 
         // Ищем людей определенного возраста
         System.out.println(new Research(gt).searchAge());

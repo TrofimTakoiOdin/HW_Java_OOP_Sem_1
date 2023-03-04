@@ -13,8 +13,8 @@ public class Research {
     // метод поиска связи: родитель - ребенок, жена-муж
     public ArrayList<String> spend(Person p, Relationship re) {
         for (Node t : tree) {
-            if (t.p1.fullName == p.fullName && t.re == re) {
-                result.add(t.p2.fullName);
+            if (t.p1.getFullName() == p.getFullName() && t.re == re) {
+                result.add(t.p2.getFullName());
             }
         }
         return result;
@@ -29,8 +29,8 @@ public class Research {
 
         for (Node t : tree) {
 
-            if (t.p1.age <= age && !resultAge.contains(t.p1.fullName)) {
-                resultAge.add(t.p1.fullName);
+            if (t.p1.getAge() <= age && !resultAge.contains(t.p1.getFullName())) {
+                resultAge.add(t.p1.getFullName());
             }
         }
         return resultAge;

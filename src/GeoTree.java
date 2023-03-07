@@ -4,8 +4,8 @@ import java.util.Scanner;
 public class GeoTree implements ProjectInterfaces.TreeInterface, ProjectInterfaces.ResearchInterface {
 
     private ArrayList<Node> tree = new ArrayList<>();
-    ArrayList<String> result = new ArrayList<>();
-    ArrayList<String> resultAge = new ArrayList<>();
+    private ArrayList<String> result = new ArrayList<>();
+    private ArrayList<String> resultAge = new ArrayList<>();
 
     public ArrayList<Node> getTree() {
         return tree;
